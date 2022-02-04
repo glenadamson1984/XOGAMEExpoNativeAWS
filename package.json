@@ -19,7 +19,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json}": ["prettier --write", "eslint"]
+    "src/**/*.{js,jsx,ts,tsx,json}": ["prettier --write", "eslint --fix src/"]
   },
   "dependencies": {
     "expo": "~44.0.0",
