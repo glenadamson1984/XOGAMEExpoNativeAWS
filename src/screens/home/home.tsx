@@ -1,7 +1,8 @@
 import React from "react";
-import { Text, View, Button } from "react-native";
+import { Text, View, Button, ScrollView } from "react-native";
 import styles from "./home.styles";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { GradientBackground } from "@components";
 import { StackNavigatorParams } from "../../config/navigation";
 
 type HomeProps = {
@@ -10,13 +11,15 @@ type HomeProps = {
 
 const Home: React.FC<HomeProps> = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text>Home</Text>
-      <Button
-        title="Game"
-        onPress={() => navigation.navigate("Game", { gameId: "12" })}
-      />
-    </View>
+    <GradientBackground>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text>Home</Text>
+        <Button
+          title="Game"
+          onPress={() => navigation.navigate("Game", { gameId: "12" })}
+        />
+      </ScrollView>
+    </GradientBackground>
   );
 };
 

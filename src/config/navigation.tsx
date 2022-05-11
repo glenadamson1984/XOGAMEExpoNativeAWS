@@ -10,10 +10,12 @@ export type StackNavigatorParams = {
 
 const Stack = createNativeStackNavigator<StackNavigatorParams>();
 
+const defaultScreenOptions = { headerShown: false };
+
 const Navigation: React.FC = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={defaultScreenOptions}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Game" component={Game} />
       </Stack.Navigator>
