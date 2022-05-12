@@ -19,7 +19,11 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
           source={require("../../../assets/logo.png")}
         />
         <View style={styles.buttons}>
-          <Button style={styles.button} title="Single Player" />
+          <Button
+            style={styles.button}
+            title="Single Player"
+            onPress={() => navigation.navigate("SinglePlayerGame")}
+          />
           <Button style={styles.button} title="Multiplayer" />
           <Button style={styles.button} title="Login" />
           <Button style={styles.button} title="Settings" />
