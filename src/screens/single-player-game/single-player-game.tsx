@@ -13,7 +13,7 @@ const SinglePlayerGame: React.FC<SinglePlayerGameProps> = ({ navigation }) => {
   return (
     <GradientBackground>
       <SafeAreaView style={styles.container}>
-        <Text style={{ color: "#fff" }}>Game</Text>
+        <Text style={{ color: "#fff" }}>This is a game</Text>
       </SafeAreaView>
     </GradientBackground>
   );
